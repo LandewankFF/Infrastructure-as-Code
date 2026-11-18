@@ -1,0 +1,15 @@
+server {
+    listen 80;
+    server_name
+    {% for domain in vhost_domains %}
+        {{ domain }}
+    {% endfor %};
+
+    root /var/www/html;
+
+    {% if enable_ssl | default(false) %}
+    # Konfigurasi SSL aktif
+    listen 443 ssl;
+    ssl_certificate /etc/ssl/cert.pem;
+    {% endif %}
+}

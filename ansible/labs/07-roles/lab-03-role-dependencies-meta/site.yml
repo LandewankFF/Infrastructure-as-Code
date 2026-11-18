@@ -1,0 +1,6 @@
+---
+- name: Uji Dependensi Antar Role
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  # TODO: Panggil role utama yang memiliki dependensi

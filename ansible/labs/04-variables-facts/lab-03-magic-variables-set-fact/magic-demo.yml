@@ -1,0 +1,7 @@
+---
+- name: Demonstrasi Magic Variables dan set_fact
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    # TODO: Tambahkan task set_fact
+    # TODO: Tambahkan task debug untuk magic variables

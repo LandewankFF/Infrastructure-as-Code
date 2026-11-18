@@ -1,0 +1,12 @@
+---
+- name: Uji Coba when dan loop
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  vars:
+    users_list:
+      - { name: 'andi', role: 'admin' }
+      - { name: 'budi', role: 'viewer' }
+      - { name: 'citra', role: 'admin' }
+  tasks:
+    # TODO: Buat task debug dengan loop dan kondisi when

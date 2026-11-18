@@ -1,0 +1,10 @@
+---
+- name: Audit Idempotency
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  tasks:
+    # Task ini selalu menghasilkan changed: true karena menggunakan shell sembarangan
+    - name: Buat file marker
+      ansible.builtin.shell: echo "active" > /tmp/marker.txt
+      # TODO: Tambahkan parameter creates atau changed_when untuk menjamin idempotency

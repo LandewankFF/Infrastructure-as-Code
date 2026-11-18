@@ -1,0 +1,12 @@
+---
+- name: Refactor ke Format FQCN
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  tasks:
+    # SEBELUM:
+    # - name: Ping
+    #   ping:
+    # SESUDAH (TODO):
+    # - name: Ping
+    #   ansible.builtin.ping:

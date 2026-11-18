@@ -1,0 +1,10 @@
+---
+- name: Batching dan Delegasi
+  hosts: targets
+  gather_facts: false
+  # TODO: Tentukan nilai serial di sini
+  tasks:
+    - name: Catat awal eksekusi ke localhost
+      ansible.builtin.debug:
+        msg: "Memproses host: {{ inventory_hostname }}"
+      # TODO: Tambahkan delegate_to: localhost

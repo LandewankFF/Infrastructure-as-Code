@@ -1,0 +1,13 @@
+---
+- name: Render Virtual Host dengan Logika Jinja2
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  vars:
+    enable_ssl: true
+    vhost_domains:
+      - "example.com"
+      - "www.example.com"
+      - "api.example.com"
+  tasks:
+    # TODO: Render template vhost.conf.j2 ke /tmp/vhost.conf

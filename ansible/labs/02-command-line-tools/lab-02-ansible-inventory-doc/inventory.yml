@@ -1,0 +1,8 @@
+---
+all:
+  children:
+    app:
+      hosts:
+        node1:
+          ansible_connection: local
+          app_env: staging

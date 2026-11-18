@@ -1,0 +1,7 @@
+---
+- name: Manajemen Container Docker
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  tasks:
+    # TODO: Gunakan community.docker.docker_container untuk menjalankan nginx

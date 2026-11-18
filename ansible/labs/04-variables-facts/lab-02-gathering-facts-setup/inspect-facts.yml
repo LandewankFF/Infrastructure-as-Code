@@ -1,0 +1,7 @@
+---
+- name: Inspeksi Ansible Facts
+  hosts: localhost
+  gather_facts: true
+  tasks:
+    # TODO: Buat task debug untuk mencetak ansible_facts['distribution']
+    # TODO: Buat task debug untuk mencetak ansible_facts['default_ipv4']['address']

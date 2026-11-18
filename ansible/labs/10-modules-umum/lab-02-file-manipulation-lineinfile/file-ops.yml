@@ -1,0 +1,9 @@
+---
+- name: Manipulasi Konten Berkas Teks
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  tasks:
+    # TODO: Task pembuatan file dasar
+    # TODO: Task lineinfile dengan regexp
+    # TODO: Task blockinfile dengan marker kustom

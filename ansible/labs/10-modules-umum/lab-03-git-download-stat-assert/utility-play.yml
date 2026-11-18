@@ -1,0 +1,9 @@
+---
+- name: Latihan Modul Utilitas
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  tasks:
+    # TODO: Task get_url
+    # TODO: Task stat dengan register
+    # TODO: Task assert untuk memeriksa hasil stat

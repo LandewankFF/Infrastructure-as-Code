@@ -1,0 +1,8 @@
+---
+- name: Kontrol Status Task
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  tasks:
+    # TODO: Buat task command dengan changed_when: false
+    # TODO: Buat task command dengan failed_when kustom

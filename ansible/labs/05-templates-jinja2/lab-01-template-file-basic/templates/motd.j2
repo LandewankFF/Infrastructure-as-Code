@@ -1,0 +1,3 @@
+Selamat Datang di Server: {{ ansible_facts['hostname'] | default('localhost') }}
+Sistem Operasi: {{ ansible_facts['distribution'] | default('Linux') }} {{ ansible_facts['distribution_version'] | default('') }}
+Dikelola secara otomatis menggunakan Ansible.

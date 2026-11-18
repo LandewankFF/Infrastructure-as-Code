@@ -1,0 +1,8 @@
+---
+- name: Manajemen Paket dan Layanan
+  hosts: localhost
+  connection: local
+  gather_facts: true
+  tasks:
+    # TODO: Buat task instalasi paket
+    # TODO: Buat task manajemen status service

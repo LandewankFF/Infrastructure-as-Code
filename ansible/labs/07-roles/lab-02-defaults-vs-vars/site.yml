@@ -1,0 +1,6 @@
+---
+- name: Uji Prioritas Defaults vs Vars Role
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  # TODO: Panggil role dan override variabel

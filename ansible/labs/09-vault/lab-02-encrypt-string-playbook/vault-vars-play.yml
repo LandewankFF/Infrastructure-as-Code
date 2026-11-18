@@ -1,0 +1,12 @@
+---
+- name: Uji Coba Vault Encrypt String
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  vars:
+    app_name: "Portal Keuangan"
+    # TODO: Tempelkan hasil ansible-vault encrypt_string di bawah ini
+  tasks:
+    - name: Tampilkan nama aplikasi
+      ansible.builtin.debug:
+        msg: "Aplikasi: {{ app_name }}"

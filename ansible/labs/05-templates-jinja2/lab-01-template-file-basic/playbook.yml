@@ -1,0 +1,7 @@
+---
+- name: Render Template MOTD
+  hosts: localhost
+  connection: local
+  gather_facts: true
+  tasks:
+    # TODO: Gunakan modul ansible.builtin.template untuk render motd.j2 ke /tmp/custom_motd.txt

@@ -1,0 +1,7 @@
+---
+ansible-navigator:
+  execution-environment:
+    container-engine: docker
+    enabled: true
+    image: ghcr.io/ansible/creator-ee:v0.22.0
+  mode: stdout

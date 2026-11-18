@@ -1,0 +1,9 @@
+---
+- name: Lab Struktur Playbook Pertama
+  hosts: localhost
+  gather_facts: false
+  vars:
+    pesan_belajar: "Saya sedang belajar struktur playbook Ansible"
+  tasks:
+    # TODO: Buat task pembuatan direktori menggunakan modul file
+    # TODO: Buat task penulisan file menggunakan modul copy

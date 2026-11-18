@@ -1,0 +1,8 @@
+---
+- name: Verifikasi Variabel group_vars dan host_vars
+  hosts: webservers
+  gather_facts: false
+  tasks:
+    - name: Tampilkan variabel
+      ansible.builtin.debug:
+        msg: "Host {{ inventory_hostname }} membaca ntp={{ ntp_server | default('UNSET') }}, port={{ http_port | default('UNSET') }}"

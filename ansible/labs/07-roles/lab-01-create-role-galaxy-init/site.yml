@@ -1,0 +1,7 @@
+---
+- name: Uji Coba Eksekusi Role
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  # TODO: Panggil role yang telah diinisialisasi
+  roles: []

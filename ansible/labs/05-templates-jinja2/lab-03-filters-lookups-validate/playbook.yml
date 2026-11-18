@@ -1,0 +1,10 @@
+---
+- name: Render Template dengan Validasi
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  vars:
+    node_ips: ["10.0.0.1", "10.0.0.2", "10.0.0.3"]
+    is_debug: false
+  tasks:
+    # TODO: Render templates/app.conf.j2 ke /tmp/app.conf dengan parameter validate

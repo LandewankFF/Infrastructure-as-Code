@@ -1,0 +1,22 @@
+---
+- name: Uji Coba block rescue always
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  tasks:
+    - name: Transaksi terlindungi
+      block:
+        - name: Task 1 Sukses
+          ansible.builtin.debug:
+            msg: "Operasi awal berjalan..."
+        # TODO: Tambahkan task yang sengaja menghasilkan error di sini
+      rescue:
+        # TODO: Tambahkan task pemulihan di sini
+        - name: Langkah Penyelamatan
+          ansible.builtin.debug:
+            msg: "Mengatasi kegagalan block..."
+      always:
+        # TODO: Tambahkan task pembersihan di sini
+        - name: Langkah Pembersihan
+          ansible.builtin.debug:
+            msg: "Pembersihan selesai."

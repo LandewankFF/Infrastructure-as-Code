@@ -1,0 +1,21 @@
+---
+- name: Uji Coba Tags dan Check Mode
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Task Persiapan Lingkungan
+      ansible.builtin.debug:
+        msg: "Langkah persiapan..."
+      tags: setup
+
+    - name: Task Modifikasi Konfigurasi
+      ansible.builtin.file:
+        path: /tmp/test-tags.txt
+        state: touch
+        mode: '0644'
+      tags: config
+
+    - name: Task Pembersihan
+      ansible.builtin.debug:
+        msg: "Langkah pembersihan..."
+      tags: cleanup

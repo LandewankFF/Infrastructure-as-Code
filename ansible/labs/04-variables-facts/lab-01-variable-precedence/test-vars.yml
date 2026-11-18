@@ -1,0 +1,12 @@
+---
+- name: Uji Prioritas Variabel
+  hosts: localhost
+  gather_facts: false
+  vars:
+    app_port: 9000
+  vars_files:
+    - vars.yml
+  tasks:
+    - name: Cetak nilai variabel aktif
+      ansible.builtin.debug:
+        msg: "Nilai app_port yang aktif adalah: {{ app_port }}"

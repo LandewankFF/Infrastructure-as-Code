@@ -1,0 +1,6 @@
+---
+# File ini sengaja dibuat kotor untuk latihan pembersihan lint
+- hosts: localhost
+  tasks:
+  - apt: name=curl state=present
+  - command: "uptime"

@@ -1,0 +1,8 @@
+---
+- name: Uji Coba Handlers dan Notify
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    # TODO: Tambahkan task copy dengan notify
+  handlers:
+    # TODO: Tambahkan handler yang sesuai

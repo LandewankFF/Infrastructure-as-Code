@@ -1,0 +1,15 @@
+# Ansible retry files
+*.retry
+
+# Ansible Vault password files
+.vault_pass
+.vault_password*
+
+# Python bytecode and virtual environments
+*.pyc
+__pycache__/
+.venv/
+
+# Ansible cache and runtime files
+.ansible/
+*.log
